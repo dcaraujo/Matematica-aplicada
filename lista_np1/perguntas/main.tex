@@ -1,0 +1,143 @@
+%%% Modelo de Lista de Exercícios para Universidade
+%%% Criado por Diogo Roberto R. Freitas (diogo@poli.br)
+%%% Livre para alterações
+\documentclass[12pt,onepage,a4paper]{memoir}
+
+%% Language and font encodings
+\usepackage[english,portuges]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=2.5cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+\setlength\parindent{0cm} % Tamanho da tabulação dos parágrafos
+
+%%% ATENÇÃO!!! %%%
+%%% Preencha estes comandos com suas informações
+\newcommand{\logo}{\includegraphics[width=0.4\textwidth]{fig/unichristus}} % inclua o arquivo com o logo da instituição
+\newcommand{\univ}{Centro Universitário Christus}
+\newcommand{\escola}{Sistemas de Informação}
+\newcommand{\disc}{Matemática Aplicada}
+\newcommand{\auth}{Prof. Daniel Araújo}
+\newcommand{\email}{\url{repositoriouni@gmail.br}}
+\newcommand{\sitedisc}{\url{--}} % site da disciplina
+\newcommand{\cabec}{UNICHRISTUS} % cabeçalho a partir da 2ª página
+\newcommand{\tit}{Radiciação e Potência}
+\newcommand{\tp}[1]{(Tópico: #1)- }
+%%%%%%%%%
+
+%% Useful packages
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\linespread{1.25}
+\usepackage{graphicx}
+\usepackage{nicefrac}
+\usepackage[tight]{units}
+\usepackage[justification=centering]{caption}
+\usepackage{subcaption}
+\usepackage{lastpage}
+\usepackage{pstricks}
+\usepackage{url}% ou hyperref
+%\usepackage{breakurl}
+\usepackage{multirow}
+\usepackage{tabulary}
+\usepackage{longtable}
+\usepackage{microtype}% improves the spacing between words and letters
+\usepackage{booktabs}%  helps you improve the quality of your LaTeX tables
+\usepackage{rotfloat}
+\usepackage{rotating}
+
+%%% NÃO ALTERAR ESTES COMANDOS 
+%%% Configura a primeira página
+\makepagestyle{1pagina}
+\makeoddhead{1pagina}{
+	\logo \\
+    \vspace{5pt}
+    %\textsf{\univ \\ \escola \\} %%% Caso o logo não tenha o nome da universidade descomente essa linha
+    \textsf{Disciplina: \disc \\
+	\auth~(\email) \\
+    \sitedisc }
+    }{}{}
+\makeoddfoot{1pagina}{\tiny \cabec}{}{\scriptsize Página \thepage~de \thelastpage}
+\makefootrule{1pagina}{\textwidth}{\normalrulethickness}{5pt}
+%%% Configura as demais páginas
+\makepagestyle{paginacomum}
+\makeevenhead{paginacomum}{\textsf{\scriptsize \cabec~-- \auth}}{}{}
+\makeevenfoot{paginacomum}{\tiny \cabec}{}{\scriptsize Página \thepage~de \thelastpage}
+\makeoddhead{paginacomum}{\textsf{\scriptsize \cabec~-- \auth}}{}{}
+\makeoddfoot{paginacomum}{\tiny \cabec}{}{\scriptsize \thepage~de \thelastpage}
+\makeheadrule{paginacomum}{\textwidth}{\normalrulethickness}
+\makefootrule{paginacomum}{\textwidth}{\normalrulethickness}{5pt}
+\pagestyle{paginacomum}
+%%%
+
+
+%%% Início do documento
+\begin{document}
+\thispagestyle{1pagina}
+\vspace*{2.5cm} %%% Caso o cabeçalho cubra estes texto aumente o "vspace"
+\fbox{
+  \begin{minipage}{\textwidth}
+    Instruções: Exercícios de revisão para  NP1.
+    \end{minipage}
+  
+}
+
+\vspace{0.5cm}
+\textbf{\textsf{\large \tit}} %%% não altere aqui
+
+
+
+\begin{enumerate} % início das questões, pode escrever aqui
+  % Quest 1
+\item Resolva a expressão $\sqrt[3]{2\left( \sqrt[2]{9}+2\sqrt[2]{25} + 1
+    \right)}$
+
+\item Obtenha a raiz cúbica 3375
+
+\item Calcule $\sqrt[1/3]{5^{2/3}}$
+
+\item Calcule $9^{\frac{3}{2}} + 32^{0.8}$
+  \item Mariana tinha 121 balas ela prometeu dar a raiz quadrada de suas balas a
+    seu primo Igor. Depois de dar as balas para seu primo, deu 27 balas a sua
+    irmã mais nova. Com quantas balas ficou Mariana?
+    \item Carlos foi desafiado pelo seu amigo: descobrir o número cujo dobro,
+      subtraindo-se 2 resulte no resultado da raiz quadrada de 144. Qual é esse
+      número?
+
+      \item Se elevarmos um número natural ao quadrado e tirarmos a raiz
+        quadrada do resultado da potencia. O que acontecerá?
+
+        \item Considere os polinômios $f(x) = ax -2$ e $g(x) = x^2 - x + 7$. Se
+          ambos forem iguais em $x=3$, qual deve ser o valor de “$a$” para que
+          isso seja verdade
+
+          \item  Dois indivíduos tentam se comunicar utilizando expressões matemáticas. A transmissão de um número é obtida resolvendo uma expressão matemática. O indivíduo “A” envia a seguinte mensagem 
+
+\begin{equation}
+  \left( \frac{x + \sqrt{x^2-4x}}{x - \sqrt{x^2-4x}}  - \frac{x - \sqrt{x^2-4x}}{x + \sqrt{x^2-4x}} \right)\left( \frac{1}{\sqrt{x^2-4x}}\right)
+\end{equation}
+Você é o indivíduo B e precisa simplificar expressão para determinar que número
+dos conjuntos reais a mensagem se refere.
+
+\item Determine a forma fatorada do produto $(x^2 - 14x + 49 )(x^2 + 14x + 49 )$
+\item Determine a forma simplificada $(x^2 + 14x + 49)( x^2 - 49)/(x^2 - 14x +
+  49)$
+  \item  A forma simplificada da razão entre os polinômios $x^3 - 8y^3$ e $x^2 -
+    4xy + 4y^2$
+
+  \item Seja $C=\{ x \in \mathbb{R} | -2 \leq x \leq 2  \}$, responda os itens a seguir.  
+
+    \begin{enumerate}[a)]
+    \item  Qual a sua representação gráfica, ou seja, qual sua representação
+      através da reta?
+    \item  Se $y = \sqrt{-x}$ , represente o conjunto ao qual y pertence.
+    \item Se $y = -\sqrt{x}$, represente o conjunto ao qual y pertence.
+    \end{enumerate}
+
+
+    
+\end{enumerate} % fim das questões
+\end{document}
