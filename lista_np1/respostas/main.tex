@@ -190,6 +190,19 @@
 Você é o indivíduo B e precisa simplificar expressão para determinar que número
 dos conjuntos reais a mensagem se refere.
 
+Resposta
+
+\begin{align}
+  \left( \frac{x + \sqrt{x^2-4x}}{x - \sqrt{x^2-4x}}  - \frac{x - \sqrt{x^2-4x}}{x + \sqrt{x^2-4x}} \right)\left( \frac{1}{\sqrt{x^2-4x}}\right)& \nonumber \\
+  \left( \frac{\left(x + \sqrt{x^2-4x}\right)^2}{x^2 - x^2+4x}  - \frac{\left(x - \sqrt{x^2-4x}\right)^2}{x^2  - x^2+4x}\right)\left( \frac{1}{\sqrt{x^2-4x}}\right)& \nonumber \\
+  \left( \frac{\left(x + \sqrt{x^2-4x}\right)^2 - \left(x - \sqrt{x^2-4x}\right)^2}{4x}\right)\left( \frac{1}{\sqrt{x^2-4x}}\right)& \nonumber \\
+  \left( \frac{x^2  + 2x\sqrt{x^2-4x} + x^2-4x - \left(x^2 - 2x\sqrt{x^2-4x} + x^2-4x\right)}{4x}\right)\left( \frac{1}{\sqrt{x^2-4x}}\right)& \nonumber \\
+  \left( \frac{4x\sqrt{x^2-4x}}{4x}\right) \left( \frac{1}{\sqrt{x^2-4x}}\right) & \nonumber \\
+   \left( \frac{4x}{4x}\right) \left( \frac{\sqrt{x^2-4x}}{\sqrt{x^2-4x}}\right)  = 1
+\end{align}
+
+
+
 \item Determine a forma fatorada do produto $(x^2 - 14x + 49 )(x^2 + 14x + 49 )$
 \item Determine a for-ma simplificada $(x^2 + 14x + 49)( x^2 - 49)/(x^2 - 14x +
   49)$
@@ -214,13 +227,18 @@ Resposta
            \centering
            \begin{tikzpicture}
              \draw [->] (-3,0) -- (3,0) node[below] {$x$};
-             \draw [red] (-2,0) node[circle,fill=black!90] {} -- (2,0) node[circle,fill=black!90] {};
+             \draw [red] (-2,0) node[circle,radius 3pt,fill=black!90] {} -- (2,0) node[circle,radius 3pt,fill=black!90] {};
            \end{tikzpicture}
            \caption{Representação na reta}
          \end{figure}
          
-    \item  Se $y = \sqrt{-x}$ , represente o conjunto ao qual y pertence.
-    \item Se $y = -\sqrt{x}$, represente o conjunto ao qual y pertence.
+       \item  Se $y = \sqrt{-x}$ , represente o conjunto ao qual y pertence.
+
+Resposta: $C_y = \{y \in \mathbb{R} |  0 \leq x \leq \sqrt{2}\}$ e domínio $C_x=\{ x \in \mathbb{R} | -2 \leq x \leq 0  \}$
+         
+\item Se $y = -\sqrt{x}$, represente o conjunto ao qual y pertence.
+
+  Resposta: $C_y = \{y \in \mathbb{R} |  -\sqrt{2} \leq x \leq 0\}$ e domínio $C_x=\{ x \in \mathbb{R} | 0 \leq x \leq 2  \}$
     \end{enumerate}
 \end{enumerate} % fim das questões
 \end{document}
